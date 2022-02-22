@@ -17,22 +17,39 @@
             <nav class="navbar">
                 <ul class="navbar_info">
                     <li>Name<input type="text" minlength="2" maxlength="10" size="5"></li>
+                    <li class="vl"></li>
                     <li>Gender
                         <select id="nav_gender" name="gender">
                             <option value="male">male</option>
                             <option value="female">female</option>
                         </select>
                     </li>
+                    <li class="vl" style="border-right: 1px solid rgb(136 136 136); height: 100%; padding-left:auto;"></li>
                     <li>Age<button id="nav_age"></button>
                     </li>
-                    <li>Date of Birth<input type="date" id="nav_birth" value="2000-01-01"></li>
+                    <li class="vl" style="border-right: 1px solid rgb(136 136 136); height: 100%;"></li>
+                    <li><label for="nav_birth">Date of Birth
+                        <input type="date" id="nav_birth" value="yyyy-mm-dd" >
+                        
+                    </li>
                     <li>Hospital<input type="text" minlength="2" size="10"></li>
-                    <li>Date<input type="date" id="nav_date" value="2022-02-22" style="border-radius: 6px;"></li>
+                    <li class="vl" style="border-right: 1px solid rgb(136 136 136); height: 100%;"></li>
+                    <li>Date<input type="date" id="nav_date" style="border-radius: 6px;"></li>
                 </ul>
             </nav>
         </header>
 
-        <sidebar id="sidebar_left" >
+        <sidebar class="sidebar_left" id="sidebar_left">
+            <ul class="sidebar_left">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </sidebar>
+
+        <sidebar id="sidebar_right">
 
         </sidebar>
 
