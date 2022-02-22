@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chiro Bones</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="navbar_logo"></div>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Chiro Bones</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header_logo">
+                <i class="logo"></i>
+                <a href=""></a>
+            </div>
 
-      <ul class="navbar_info">
-        <li>Name</li>
-        <li>Gender</li>
-        <li>Age</li>
-        <li>Date of Birth</li>
-        <li>Hospital</li>
-        <li>Date</li>
-      </ul>
-    </nav>
+            <nav class="navbar">
+                <ul class="navbar_info">
+                    <li>Name<input type="text" minlength="2" maxlength="10" size="5"></li>
+                    <li>Gender
+                        <select id="nav_gender" name="gender">
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                        </select>
+                    </li>
+                    <li>Age<button id="nav_age"></button>
+                    </li>
+                    <li>Date of Birth<input type="date" id="nav_birth" value="2000-01-01"></li>
+                    <li>Hospital<input type="text" minlength="2" size="10"></li>
+                    <li>Date<input type="date" id="nav_date" value="2022-02-22"></li>
+                </ul>
+            </nav>
+        </header>
 
-    <canvas id="boneCanvas" class="boneCanvas"></canvas>
+        <sidebar id="sidebar_left" >
 
-    <div class="canvasControls">
-      
-    </div>
+        </sidebar>
 
-    <script src="app.js"></script>
-  </body>
+        <canvas id="boneCanvas" class="boneCanvas"></canvas>
+
+        <div class="canvasControls"></div>
+
+        <script src="app.js"></script>
+    </body>
 </html>
