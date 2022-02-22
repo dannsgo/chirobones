@@ -9,6 +9,10 @@ body {
   padding: 50px 0px;
 }
 
+.navbar {
+  background-color: #323232;
+}
+
 .boneCanvas {
   width: 100vw;
   height: 100vh;
