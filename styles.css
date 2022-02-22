@@ -24,10 +24,17 @@ body {
 .navbar_info {
   display: flex;
   width: 90%;
+  height: 100%;
+  flex-flow: row wrap;
   justify-content: space-between;
   list-style: none;
-  font-size: 14px;
   color: whitesmoke;
+}
+
+body > header > nav > ul > li.vl {
+  border-right: 1px solid rgb(136 136 136); 
+  height: 100%; 
+  /* padding-left:auto; */
 }
 
 .boneCanvas {
