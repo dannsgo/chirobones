@@ -41,6 +41,7 @@ body > header > nav > ul > li.vl {
   border-right: 1px solid rgb(136 136 136); 
   height: 100%; 
   /* padding-left:auto; */
+<<<<<<< HEAD
 }
 
 .sidebar_left {
@@ -49,6 +50,8 @@ body > header > nav > ul > li.vl {
   width: 100px;
   list-style: none;
   background-color: #323232;
+=======
+>>>>>>> 62eaa1055971bd59230afbf68559112b6daf5a83
 }
 
 .boneCanvas {
