@@ -29,6 +29,7 @@ body {
   justify-content: space-between;
   list-style: none;
   color: whitesmoke;
+  border-radius: 6px;
 }
 
 body > header > nav > ul > li.vl {
