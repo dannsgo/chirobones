@@ -1,3 +1,7 @@
+// input > date
+document.getElementById('nav_date').value = new Date(). toISOString().substring(0, 10);
+
+// Canvas
 const canvas = document.getElementById("boneCanvas");
 // Pixel Control == 2D
 const ctx = canvas.getContext("2d");
