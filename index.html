@@ -8,45 +8,45 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header class="header">
-            <div class="header_logo">
+        <header class="header" id="boneHeader" >
+            <div class="header_logo" id="boneHeader" >
                 <i></i>
                 <a href=""></a>
             </div>
 
-            <nav class="navbar">
-                <ul class="nav_info">
+            <nav class="navbar" id="boneNavbar">
+                <ul class="nav_info" id="boneNav">
                     <li>Name
-                        <input type="text" class="nav_border" minlength="2" size="5">
+                        <input type="text" class="nav_box" id="nav_name" minlength="2" size="5">
                     </li>
-                    <div class="vl"></div>
+                    <span class="nav_vl"></span>
                     <li>Gender
-                        <select class="nav_border" id="nav_gender" name="gender">
+                        <select class="nav_box" " id=" nav_gender" name=" gender"="gender"">
                             <option value="male">male</option>
                             <option value="female">female</option>
                         </select>
                     </li>
-                    <div class="vl"></div>
+                    <span class="nav_vl"></span>
                     <li>Age
-                        <input type="text" class="nav_border" minlength="1" size="3">
+                        <input type="text" class="nav_box" id="nav_age" minlength="1" size="3">
                     </li>
-                    <div class="vl"></div>
+                    <span class="nav_vl"></span>
                     <li>Date of Birth
-                        <input type="date" class="nav_border" id="nav_birth" value="2000-01-01"></li>
-                    <div class="vl"></div>
+                        <input type="date" class="nav_box" id="nav_birth" value="2000-01-01"></li>
+                    <span class="nav_vl"></span>
                     <li>Hospital
-                        <input type="text" class="nav_border" minlength="2" size="10"></li>
-                    <div class="vl"></div>
+                        <input type="text" class="nav_box" id="nav_hospital" minlength="2" size="10"></li>
+                    <span class="nav_vl"></span>
                     <li>Date
-                        <input type="date" id="nav_date" class="nav_border">
+                        <input type="date" class="nav_box" id="nav_date">
                     </li>
                 </ul>
             </nav>
         </header>
 
-        <sidebar class="sidebar">
-            <div class="sidebar_left">
-                <ul class="sidebar_icon">
+        <sidebar class="sidebar" id="sidebar">
+            <div class="sidebar_left" id="sideLeft">
+                <ul class="sidebar_i" id="leftIcon">
                     <li></li>
                     <li></li>
                     <li></li>
@@ -55,7 +55,8 @@
                 </ul>
             </div>
 
-            <div class="sidebar_right"></div>
+            <div class="sidebar_right" id="sideRight">
+            </div>
         </sidebar>
 
         <canvas id="boneCanvas" class="boneCanvas"></canvas>

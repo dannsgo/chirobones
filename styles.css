@@ -36,19 +36,20 @@ body {
     font-size: 1em;
 }
 
-.nav_border {
+.nav_box {
     border-radius: 4px;
     background-color: rgb(87, 89, 89);
     border-color: rgb(109, 107, 107);
     color: whitesmoke;
     border-width: 1px;
     border-style: solid;
+    margin: 0 5px 0 5px;
 }
 /* 수직선 */
-.vl {
+.nav_vl {
   border-left: 1px solid #888;
   display: flex;
-  margin: 0 5px 0 6px;
+  margin: 0 6px 0 4px;
 }
 /* input > date > icon */
 ::-webkit-calendar-picker-indicator {
@@ -68,12 +69,12 @@ body {
     background-color: #323232;
 }
 
-.sidebar_icon {
+.sidebar_i {
     list-style: none;
 }
 
 .sidebar_right {
-    width: 30%;
+    width: 20%;
     height: 100vh;
     margin-left: auto;
     background-color: #323232;
