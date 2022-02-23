@@ -8,20 +8,16 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header class="header" id="boneHeader" >
-            <div class="header_logo" id="boneHeader" >
-                <i></i>
-                <a href=""></a>
-            </div>
-
-            <nav class="navbar" id="boneNavbar">
-                <ul class="nav_info" id="boneNav">
+        <!-- Header -->
+        <header id="boneHeader" class="header">
+            <nav id="boneNavbar" class="navbar">
+                <ul id="boneNav" class="nav_info">
                     <li>Name
-                        <input type="text" class="nav_box" id="nav_name" minlength="2" size="5">
+                        <input type="text" id="nav_name" class="nav_box" minlength="2" size="5">
                     </li>
                     <span class="nav_vl"></span>
                     <li>Gender
-                        <select class="nav_box" " id=" nav_gender" name=" gender"="gender"">
+                        <select class="nav_box" " id=" nav_gender">
                             <option value="male">male</option>
                             <option value="female">female</option>
                         </select>
@@ -43,7 +39,7 @@
                 </ul>
             </nav>
         </header>
-
+        <!-- Sidebar -->
         <sidebar class="sidebar" id="sidebar">
             <div class="sidebar_left" id="sideLeft">
                 <ul class="sidebar_i" id="leftIcon">
@@ -56,12 +52,14 @@
             </div>
 
             <div class="sidebar_right" id="sideRight">
+                <button class="dl_work" id="dlWork">ChiroBones</button>
             </div>
         </sidebar>
-
+        <!-- Canvas -->
         <canvas id="boneCanvas" class="boneCanvas"></canvas>
+        <div class="canvasControls">
 
-        <div class="canvasControls"></div>
+        </div>
 
         <script src="app.js"></script>
     </body>
