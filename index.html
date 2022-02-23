@@ -17,32 +17,32 @@
                     </li>
                     <span class="nav_vl"></span>
                     <li>Gender
-                        <select class="nav_box" " id=" nav_gender">
-                            <option value="male">male</option>
-                            <option value="female">female</option>
+                        <select id="nav_gender" class="nav_box">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
                         </select>
                     </li>
                     <span class="nav_vl"></span>
                     <li>Age
-                        <input type="text" class="nav_box" id="nav_age" minlength="1" size="3">
+                        <input type="text" id="nav_age" class="nav_box" minlength="1" size="3">
                     </li>
                     <span class="nav_vl"></span>
                     <li>Date of Birth
-                        <input type="date" class="nav_box" id="nav_birth" value="2000-01-01"></li>
+                        <input type="date" id="nav_birth" class="nav_box" value="2000-01-01"></li>
                     <span class="nav_vl"></span>
                     <li>Hospital
-                        <input type="text" class="nav_box" id="nav_hospital" minlength="2" size="10"></li>
+                        <input type="text" id="nav_hospital" class="nav_box" minlength="2" size="10"></li>
                     <span class="nav_vl"></span>
                     <li>Date
-                        <input type="date" class="nav_box" id="nav_date">
+                        <input type="date" id="nav_date" class="nav_box">
                     </li>
                 </ul>
             </nav>
         </header>
         <!-- Sidebar -->
-        <sidebar class="sidebar" id="sidebar">
-            <div class="sidebar_left" id="sideLeft">
-                <ul class="sidebar_i" id="leftIcon">
+        <sidebar id="sidebar" class="sidebar">
+            <div id="sideLeft" class="sidebar_left">
+                <ul id="leftIcon" class="sidebar_i">
                     <li></li>
                     <li></li>
                     <li></li>
@@ -51,8 +51,32 @@
                 </ul>
             </div>
 
-            <div class="sidebar_right" id="sideRight">
-                <button class="dl_work" id="dlWork">ChiroBones</button>
+            <div id="sideRight" class="sidebar_right">
+                <div>
+                    <button id="btnAI" class="btn_ai">ChiroBones</button>
+                </div>
+                <div id="tabMenu" class="tab_menu">
+                    <ul id="tabBtn" class="tab_btn">
+                        <li class="tab_menus">
+                            <a href="#checkup" class="tab_btns">환자진찰</a>
+                            <div id="checkup" class="tab_cont">
+                                환자진찰영역
+                            </div>
+                        </li>
+                        <li class="tab_menus">
+                            <a href="#patient" class="tab_btns">환자정보</a>
+                            <div id="patient" class="tab_cont">
+                                환자정보영역
+                            </div>
+                        </li>
+                        <li class="tab_menus">
+                            <a href="#platform" class="tab_btns">공유플랫폼</a>
+                            <div id="platform" class="tab_cont">
+                                공유플랫폼영역
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </sidebar>
         <!-- Canvas -->
@@ -62,6 +86,5 @@
         </div>
 
         <script src="app.js"></script>
-        <!-- <script>document.getElementById('nav_date').value = new Date(). toISOString().substring(0, 10);</script> -->
     </body>
 </html>

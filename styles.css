@@ -1,6 +1,6 @@
 @import "reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
 
 body {
     display: flex;
@@ -8,30 +8,27 @@ body {
     height: 100vh;
     overflow: hidden;
     background-color: rgb(17 15 15);
-    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Poppins", "Spoqa Han Sans Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     flex-direction: column;
     font-size: 14px;
 }
 
-button, input {
-    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+button, input, a {
+    font-family: "Poppins", "Spoqa Han Sans Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     color: whitesmoke;
 }
 
-input {
-    font-size: 12px;
-}
-/* <--header */
+/* start__header */
 .header {
     z-index: 99;
     box-shadow: rgb(0, 0, 0, 0.5) 0 10px 10px 0;
     background-color: #323232;
 }
-/* <--navbar */
+/* start__navbar */
 .navbar {
     display: flex;
     align-content: space-between;
-    width: 100vw;
+    width: 100%;
     background-color: #323232;
 }
 
@@ -40,13 +37,13 @@ input {
     align-content: space-between;
     width: 90%;
     height: 100%;
-    padding-left: 6%;
+    padding-left: 6vw;
     margin-right: auto;
     flex-flow: row wrap;
     list-style: none;
     color: whitesmoke;
     border-radius: 6px;
-    font-size: 1em;
+    font-size: 0.8rem;
 }
 
 .nav_box {
@@ -57,27 +54,32 @@ input {
     border-width: 1px;
     border-style: solid;
     margin: 0 5px 0 5px;
+    font-size: 0.8rem;
+}
+#nav_gender {
+    height: 100%;
 }
 /* 수직선 */
 .nav_vl {
-  border-left: 1px solid #888;
-  display: flex;
-  margin: 0 6px 0 4px;
+    border-left: 1px solid #888;
+    display: flex;
+    margin: 0 6px 0 4px;
 }
 /* input > date > icon */
 ::-webkit-calendar-picker-indicator {
-  filter: invert(1);
+    filter: invert(1);
 }
-/* navbar--> */
+/* navbar__end */
+/* header__end */
+/* start__sidebar */
 .sidebar {
     display: flex;
     height: 100vh;
     max-height: 100vh;
-    background-color:;
 }
 
 .sidebar_left {
-    width: 6%;
+    width: 6vw;
     height: 100vh;
     background-color: #323232;
 }
@@ -87,31 +89,83 @@ input {
 }
 
 .sidebar_right {
-    width: 20%;
+    width: 20vw;
     height: 100vh;
     margin-left: auto;
     background-color: #323232;
 }
 
-.dl_work {
+#sideTabMenu {
+    list-style: none;
+}
+
+.btn_ai {
     display: flex;
+    white-space: pre-wrap;
+    text-overflow: clip;
+    text-overflow: wrap;
     margin: 0 auto;
-    margin-top: 30px;
-    padding: 2% 8% 2% 8%;
-    font-size: 1.2em;
-    border-radius: 6px;
+    margin-top: 10%;
+    padding: 0.6vmax 3vmax 0.6vmax 3vmax;
+    font-size: 1.2rem;
+    border-radius: 5px;
     font-family: 'Poppins';
     font-weight: 700;
     background-color: whitesmoke;
+    border: none;
     color: #323232;
 }
 
-.dl_work:hover {
-    background-color: #323232;
+.btn_ai:hover {
+    background-color: transparent;
+    border: 2px solid whitesmoke;
     color: whitesmoke;
+    transition: all 0.2s ease;
+}
+/* start_tabMenu */
+.tab_menu {
+    position: relative;
 }
 
+.tab_btn {
+    overflow: hidden;
+    list-style: none;
+}
+
+.tab_btn {
+    float: left;
+}
+
+.tab_btns {
+    border: 1px solid whitesmoke;
+}
+
+.tab_cont{
+    display: none;
+    position: absolute;
+    background: transparent;
+    color: whitesmoke;
+    width: 100%;
+    height: 100%;
+}
+
+.tab_checkup .tab_btns {
+    color: blue;
+}
+
+.tab_checkup .tab_cont {
+    display: block;
+    background: transparent;
+    color: whitesmoke;
+    width: 100%;
+    height: 100%;
+}
+
+/* tabMenu_end */
+/* sidebar__end */
+/* start_canvas */
 .boneCanvas {
     width: 100vw;
     height: 100vh;
 }
+/* canvas_end */
