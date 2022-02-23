@@ -97,12 +97,19 @@ input {
     display: flex;
     margin: 0 auto;
     margin-top: 30px;
-    padding: 2% 10% 2% 10%;
-    font-size: 1.1em;
+    padding: 2% 8% 2% 8%;
+    font-size: 1.2em;
     border-radius: 6px;
-    font-family: 'Poppins', 700;
+    font-family: 'Poppins';
+    font-weight: 700;
     background-color: whitesmoke;
     color: #323232;
+    border-color: whitesmoke;
+}
+
+.dl_work:hover {
+    background-color: #323232;
+    color: whitesmoke;
 }
 
 .boneCanvas {
