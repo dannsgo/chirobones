@@ -1,15 +1,16 @@
 // input > date
 document.getElementById('nav_date').value = new Date().toISOString().substring(0, 10);
 // tab menu
-const tabMenu = document.querySelectorAll('tab_btn');
-for(let i = 0; i < tabMenu.length; i++) {
-    tabMenu[i].getElementsByClassName('tab_btns').addEventListener('click', function(changeMenu){
-        changeMenu.preventDefault();
-        for(let j = 0; j < tabMenu.length; j++){
-            tabMenu[j].classList.remove('tab_menus');
-        }
-        this.parentNode.classList.add('tab_menus');
-    });
+const tabList = document.querySelectorAll('.tab_menu .tab_btn li');
+  
+for(var i = 0; i < tabList.length; i++){
+  tabList[i].querySelector('.tab_btns').addEventListener('click', function(changeTab){
+    changeTab.preventDefault();
+    for(var j = 0; j < tabList.length; j++){
+      tabList[j].classList.remove('tab_menus');
+    }
+    this.parentNode.classList.add('tab_menus');
+  });
 }
 
 // Canvas
