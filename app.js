@@ -2,11 +2,10 @@
 document.getElementById('nav_date').value = new Date().toISOString().substring(0, 10);
 // tab menu
 const tabList = document.querySelectorAll('.tab_menu .tab_btn li');
-  
-for(var i = 0; i < tabList.length; i++){
+for(let i = 0; i < tabList.length; i++){
   tabList[i].querySelector('.tab_btns').addEventListener('click', function(changeTab){
     changeTab.preventDefault();
-    for(var j = 0; j < tabList.length; j++){
+    for(let j = 0; j < tabList.length; j++){
       tabList[j].classList.remove('tab_menus');
     }
     this.parentNode.classList.add('tab_menus');
