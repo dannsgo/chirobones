@@ -7,43 +7,215 @@
     font-style: normal;
 }
 
-body {
-    display: flex;
+* {
     margin: 0;
-    height: 100vh;
-    overflow: hidden;
-    background-color: rgb(17 15 15);
-    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    flex-direction: column;
-    font-size: 14px;
+    padding: 0;
+    box-sizing: border;
 }
 
-button, input, {
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(17 15 15);
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+}
+/* start_login.html*/
+.login_area {
+    display: flex;
+    flex-flow: column nowrap ;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.login_box {
+    min-width: 500px;
+    min-height: 350px;
+    max-width: 5rem;
+    max-height: 5rem;
+    border-radius: 15px;
+    background-color: #323232;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.login__box {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login_inner {
+    display: flex;
+    flex-flow: column;
+    justify-content: ;
+    align-items: center;
+    width:100%;
+}
+
+.login_inner h1 {
+    color: whitesmoke;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 1.2rem;
+}
+/* start__login input */
+.login_form {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SpoqaHanSansNeo-Regular', "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.login_form input {
+    box-sizing: border-box;
+    width: 366px;
+    height: 44px;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    background-color: #575959;
+    font-size: 1rem;
+    color: whitesmoke;
+    border: 1px solid #323232;
+    outline: none;
+}
+
+.loginBtn_id {
+    border-radius: 6px 6px 0 0;
+}
+
+.loginBtn_pw {
+    border-radius: 0 0 6px 6px;
+}
+
+.login_form label {
+    position: absolute;
+    left: 5.5rem;
+    font-size: 1rem;
+    color: #999;
+    transition: all 1s ease;
+}
+
+.login_form input:focus{
+    background-color: transparent;
+    border: 1px solid #575959;
+    z-index: 1;
+}
+
+.login_form input:focus + label,
+.login_form input:valid + label {
+    color: transparent;
+}
+/* login input__end */
+/* start__login button */
+.loginBtn_area {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.login_btns {
+    margin: 0 0.5rem 0 0.5rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: whitesmoke;
+    border: none;
+    color: #323232;
+    font-family: 'SpoqaHanSansNeo-Regular', "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    cursor: pointer;
+}
+/* login button__end */
+/* login.html_end */
+
+/* start_join.html */
+.join_area {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #323232;
+    margin: 0 auto;
+}
+
+.join_area h1 {
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 5vh 0 5vh 0;
+}
+
+.join_area form {
+    width: 80%;
+    height: 60%;
+    font-family: 'SpoqaHanSansNeo-Regular', "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.join_pannel {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.join_form label {
     color: whitesmoke;
 }
+
+#joinBtn {
+    font-size: 0.8rem;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: #323232;
+    border: 2px solid #999;
+    outline: none;
+    color: whitesmoke;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    z-index: 1;
+    font-family: 'SpoqaHanSansNeo-Regular', "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    cursor: pointer;
+}
+/* join.html_end */
+
+/* start_index.html */
 /* start__header */
 .header {
-    z-index: 99;
-    box-shadow: rgb(0, 0, 0, 0.5) 0 10px 10px 0;
     background-color: #323232;
+    box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.5);
+    position: relative;
 }
 /* start__navbar */
 .navbar {
     display: flex;
     align-content: space-between;
     width: 100%;
-    background-color: #323232;
 }
 
 .nav_info {
     display: flex;
-    align-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
     width: 90%;
     height: 100%;
-    padding-left: 6vw;
+    padding-left: 4vw;
+    padding: 1.5vw 3vw 1.5vw 3vw;
     margin-right: auto;
-    flex-flow: row wrap;
     list-style: none;
     color: whitesmoke;
     border-radius: 6px;
@@ -58,12 +230,14 @@ button, input, {
     border-width: 1px;
     border-style: solid;
     margin: 0 5px 0 5px;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 0.8rem;
 }
+
 #nav_gender {
     height: 100%;
 }
-/* 수직선 */
+/* nav_info > border */
 .nav_vl {
     border-left: 1px solid #888;
     display: flex;
@@ -80,46 +254,70 @@ button, input, {
     display: flex;
     height: 100vh;
     max-height: 100vh;
+    overflow: hidden;
 }
 
 .sidebar_left {
-    width: 6vw;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    width: 3vw;
+    max-height: 100vh;
     background-color: #323232;
 }
 
 .sidebar_i {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    margin-top: 10px;
+    padding: 0;
+    max-height: 100vh;
     list-style: none;
+}
+
+.material-icons {
+    float: left;
+    margin: 0 auto;
+    padding: 10px 0 10px;
+    color: whitesmoke;
+    font-size: 1.5rem !important
+}
+
+.i_btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .sidebar_right {
     display: flex;
-    justify-content: center;
-    width: 20vw;
-    height: 100vh;
+    flex-flow: column wrap;
+    align-items: center;
     margin-left: auto;
     background-color: #323232;
+    width: 25vw;
+    height: 100%;
 }
 
 #sideTabMenu {
     list-style: none;
 }
 
-.btn_ai {
-    display: flex;
+.side_btn {
+    margin: 0 auto;
     margin-top: 10%;
-    padding: 0.6vmax 3vmax 0.6vmax 3vmax;
-    font-size: 1.2rem;
+}
+
+.btn_ai {
+    padding: 0.6vmax 5vmax 0.6vmax 5vmax;
+    font-size: 1.6rem;
     border-radius: 5px;
     font-family: 'Poppins';
     font-weight: 700;
     background-color: whitesmoke;
     border: none;
     color: #323232;
-    /* 수정 필요 */
-    /* white-space: pre-wrap;
-    text-overflow: clip;
-    text-overflow: wrap; */
+    cursor: pointer;
 }
 
 .btn_ai:hover {
@@ -128,15 +326,16 @@ button, input, {
     color: whitesmoke;
     transition: all 0.2s ease;
 }
-/* start_tabMenu */
+/* start__tabMenu */
 .tab_menu {
     display: flex;
     position: absolute;
-    margin-top: 5%;
-    width: 20vw;
+    margin-top: 8%;
+    width: 25vw;
     height: 100vh;
     text-decoration: none;
 }
+
 .tab_btn {
     display: flex;
     width: 100%;
@@ -144,19 +343,22 @@ button, input, {
     padding: 0;
     font-family: 'SpoqaHanSansNeo-Regular';
 }
+
 .tab_btn li {
     float: left;
     margin: 0 auto;
 }
+
 .tab_menu .tab_btn .tab_btns {
     display: felx;
     font-size:13px;
     text-decoration: none;
     color: whitesmoke;
 }
+
 .tab_menu .tab_btn .tab_cont {
     display: none;
-    position:absolute;
+    position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
@@ -165,18 +367,21 @@ button, input, {
     text-align:center;
     line-height:100%;
 }
+
 .tab_menu .tab_btn li.tab_menus .tab_btns {
     font-weight: bold;
     color: #888;
 }
+
 .tab_menu .tab_btn li.tab_menus .tab_cont {
     display:block;
 }
-/* tabMenu_end */
+/* tabMenu__end */
 /* sidebar__end */
-/* start_canvas */
+/* start__canvasApi */
 .boneCanvas {
     width: 100vw;
     height: 100vh;
 }
-/* canvas_end */
+/* canvasApi__end */
+/* index.html_end */
