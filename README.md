@@ -1,2 +1,2 @@
 # ChiroBones
-팀 프로젝트
+SMHRD 프로젝트
