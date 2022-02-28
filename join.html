@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join ChiroBones</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <main class="join_area">
-        <h1>ChiroBones</h1>
-        <form action="" method="post">
-            <div class="join_pannel">
-                <div class="join_form">
-                    <label for="joinId">아이디</label>
-                    <input type="text" name="id" id="id" aria-label="이메일" autocapitalize="off"
-                        placeholder="id@example.com" required>
-                </div>
-                <div class="join_form">
-                    <label for="pw1">비밀번호</label>
-                    <input type="password" name="pw1" id="pw1" aria-label="비밀번호" autocapitalize="off" required>
-                </div>
-                <div class="join_form">
-                    <label for="pw2">비밀번호 재확인</label>
-                    <input type="password" name="pw2" id="pw2" aria-label="비밀번호 재확인" autocapitalize="off" required>
-                </div>
-                <div class="join_form">
-                    <label for="id">면허 번호</label>
-                    <input type="text" name="license" id="license" aria-label="면허 번호" autocapitalize="off" required>
-                </div>
-                <div class="join_form">
-                    <label for="id">면허 취득 일자</label>
-                    <input type="text" name="licenseDate" id="licenseDate" aria-label="면허 취득 일자" autocapitalize="off"
-                        required>
-                </div>
-                <div class="joinBtn_area">
-                    <button type="submit" formmethod="post" id="joinBtn" aria-label="계정 생성">Create account</button>
-                </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Join ChiroBones</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <main class="join_area">
+            <div class="join_container">
+                <h1>ChiroBones</h1>
+                <form action="" method="post">
+                    <div class="join_pannel">
+                        <div class="join_form">
+                            <h3 class="join_title"><label for="joinId">아이디</label></h3>
+                            <input type="text" name="id" id="id" aria-label="이메일" autocapitalize="off" placeholder="id@example.com" required />
+                        </div>
+                        <div class="join_form">
+                            <h3 class="join_title"><label for="pw1">비밀번호</label></h3>
+                            <input type="password" name="pw1" id="pw1" aria-label="비밀번호" autocapitalize="off" required />
+                        </div>
+                        <div class="join_form">
+                            <h3 class="join_title"><label for="pw2">비밀번호 재확인</label></h3>
+                            <input type="password" name="pw2" id="pw2" aria-label="비밀번호 재확인" autocapitalize="off" required />
+                        </div>
+                        <div class="join_form">
+                            <h3 class="join_title"><label for="license">면허 번호</label></h3>
+                            <input type="text" name="license" id="license" aria-label="면허 번호" autocapitalize="off" required />
+                        </div>
+                        <div class="join_form">
+                            <h3 class="join_title"><label for="licenseDate">면허 취득 일자</label></h3>
+                            <input type="text" name="licenseDate" id="licenseDate" aria-label="면허 취득 일자" autocapitalize="off" required />
+                        </div>
+                        <div class="join_form">
+                            <h3 class="join_title"><label for="">근무 병원</label></h3>
+                            <input type="text" name="" id="" aria-label="근무 병원" autocapitalize="off" required />
+                        </div>
+                        <div class="joinBtn_area">
+                            <button type="submit" formmethod="post" id="joinBtn" aria-label="계정 생성">Create account</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </form>
-    </main>
-</body>
-
+        </main>
+    </body>
 </html>

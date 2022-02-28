@@ -1,119 +1,107 @@
 <!DOCTYPE html>
 <html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ChiroBones</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChiroBones</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
-
-<body>
-    <!-- Header -->
-    <header id="boneHeader" class="header">
-        <nav id="boneNavbar" class="navbar">
-            <ul id="boneNav" class="nav_info">
-                <li>Name
-                    <input type="text" id="nav_name" class="nav_box" minlength="2" size="5">
-                </li>
-                <span class="nav_vl"></span>
-                <li>Gender
-                    <select id="nav_gender" class="nav_box">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                    </select>
-                </li>
-                <span class="nav_vl"></span>
-                <li>Age
-                    <input type="text" id="nav_age" class="nav_box" minlength="1" size="3">
-                </li>
-                <span class="nav_vl"></span>
-                <li>Date of Birth
-                    <input type="date" id="nav_birth" class="nav_box" value="2000-01-01"></li>
-                <span class="nav_vl"></span>
-                <li>Hospital
-                    <input type="text" id="nav_hospital" class="nav_box" minlength="2" size="10"></li>
-                <span class="nav_vl"></span>
-                <li>Date
-                    <input type="date" id="nav_date" class="nav_box">
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Sidebar -->
-    <sidebar id="sidebar" class="sidebar">
-        <div id="sideLeft" class="sidebar_left">
-            <ul id="leftIcon" class="sidebar_i">
-                <li id="i_point" class="menu_i">
-                    <button class="i_btn">
-                        <i class="material-icons">adjust</i>
-                    </button>
-                </li>
-                <li id="line" class="menu_i">
-                    <button class="i_btn">
-                        <i class="material-icons">straighten</i>
-                    </button>
-                </li>
-                <li id="i_zoomin" class="menu_i">
-                    <button class="i_btn">
-                        <i class="material-icons">zoom_in</i>
-                    </button>
-                </li>
-                <li id="i_zoomout" class="menu_i">
-                    <button class="i_btn">
-                        <i class="material-icons">zoom_out</i>
-                    </button>
-                </li>
-                <li id="i_light" class="menu_i">
-                    <button class="i_btn">
-                        <i class="material-icons">lightbulb</i>
-                    </button>
-                </li>
-            </ul>
-        </div>
-        <div id="sideRight" class="sidebar_right">
-            <div id="sideAiBtn" class="side_btn">
-                <button id="btnAI" class="btn_ai" type="button">ChiroBones</button>
-            </div>
-            <div id="tabMenu" class="tab_menu">
-                <ul id="tabBtn" class="tab_btn">
-                    <li class="tab_menus">
-                        <a href="#checkup" class="tab_btns">
-                            환자진찰
-                        </a>
-                        <div id="checkup" class="tab_cont">
-                            환자진찰영역
-                        </div>
+    <body>
+        <!-- Header -->
+        <header id="boneHeader" class="header">
+            <nav id="boneNavbar" class="navbar">
+                <ul id="boneNav" class="nav_info">
+                    <li>
+                        Name
+                        <input type="text" id="nav_name" class="nav_box" minlength="2" size="5" />
                     </li>
-                    <li class="tab_menus">
-                        <a href="#patient" class="tab_btns">
-                            환자정보
-                        </a>
-                        <div id="patient" class="tab_cont">
-                            환자정보영역
-                        </div>
+                    <span class="nav_vl"></span>
+                    <li>
+                        Gender
+                        <select id="nav_gender" class="nav_box">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
                     </li>
-                    <li class="tab_menus">
-                        <a href="#platform" class="tab_btns">
-                            공유플랫폼
-                        </a>
-                        <div id="platform" class="tab_cont">
-                            공유플랫폼영역
-                        </div>
+                    <span class="nav_vl"></span>
+                    <li>
+                        Age
+                        <input type="text" id="nav_age" class="nav_box" minlength="1" size="3" />
+                    </li>
+                    <span class="nav_vl"></span>
+                    <li>Date of Birth <input type="date" id="nav_birth" class="nav_box" value="2000-01-01" /></li>
+                    <span class="nav_vl"></span>
+                    <li>Hospital <input type="text" id="nav_hospital" class="nav_box" minlength="2" size="10" /></li>
+                    <span class="nav_vl"></span>
+                    <li>
+                        Date
+                        <input type="date" id="nav_date" class="nav_box" />
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Sidebar -->
+        <sidebar id="sidebar" class="sidebar">
+            <div id="sideLeft" class="sidebar_left">
+                <ul id="leftIcon" class="sidebar_i">
+                    <li id="i_point" class="menu_i">
+                        <button class="i_btn">
+                            <i class="material-icons">adjust</i>
+                        </button>
+                    </li>
+                    <li id="line" class="menu_i">
+                        <button class="i_btn">
+                            <i class="material-icons">straighten</i>
+                        </button>
+                    </li>
+                    <li id="i_zoomin" class="menu_i">
+                        <button class="i_btn">
+                            <i class="material-icons">zoom_in</i>
+                        </button>
+                    </li>
+                    <li id="i_zoomout" class="menu_i">
+                        <button class="i_btn">
+                            <i class="material-icons">zoom_out</i>
+                        </button>
+                    </li>
+                    <li id="i_light" class="menu_i">
+                        <button class="i_btn">
+                            <i class="material-icons">lightbulb</i>
+                        </button>
                     </li>
                 </ul>
             </div>
-            <!-- <div> <ul> </ul> </div> -->
-        </div>
-    </sidebar>
-    <!-- Canvas -->
-    <main class="canvas">
-        <!-- <canvas id="boneCanvas" class="boneCanvas"></canvas> <div
+            <div id="sideRight" class="sidebar_right">
+                <div id="sideAiBtn" class="side_btn">
+                    <button id="btnAI" class="btn_ai" type="button">ChiroBones</button>
+                </div>
+                <div id="tabMenu" class="tab_menu">
+                    <ul id="tabBtn" class="tab_btn">
+                        <li class="tab_menus">
+                            <a href="#checkup" class="tab_btns"> 환자진찰 </a>
+                            <div id="checkup" class="tab_cont">환자진찰영역</div>
+                        </li>
+                        <li class="tab_menus">
+                            <a href="#patient" class="tab_btns"> 환자정보 </a>
+                            <div id="patient" class="tab_cont">환자정보영역</div>
+                        </li>
+                        <li class="tab_menus">
+                            <a href="#platform" class="tab_btns"> 공유플랫폼 </a>
+                            <div id="platform" class="tab_cont">공유플랫폼영역</div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div> <ul> </ul> </div> -->
+            </div>
+        </sidebar>
+        <!-- Canvas -->
+        <main class="canvas">
+            <!-- <canvas id="boneCanvas" class="boneCanvas"></canvas> <div
             class="canvasControls"></div> -->
-    </main>
-    <script src="app.js"></script>
-</body>
-
+        </main>
+        <script src="app.js"></script>
+    </body>
 </html>
