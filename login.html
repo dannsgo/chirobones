@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign in to ChiroBones</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign in to ChiroBones</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <main class="login_area">
-        <div class="login_box">
-            <div class="login__box">
-                <div class="login_inner">
-                    <h1>
-                        ChiroBones
-                    </h1>
-                    <form action="" method="">
-                        <div id="loginId" class="login_form">
-                            <input type="text" name="id" id="id" class="loginBtn_id" aria-label="이메일" autocapitalize="off" required>
-                            <label for="id">id@example.com</label>
-                        </div>
-                        <div id="loginPw" class="login_form">
-                            <input type="password" name="pw" id="pw" class="loginBtn_pw" aria-label="비밀번호" autocapitalize="off" required>
-                            <label for="pw">password</label>
-                        </div>
-                        <span class="loginBtn_area">
-                            <button type="submit" id="loginBtn_join" class="login_btns" aria-label="가입 버튼">Sign up</button>
-                            <button type="submit" formmethod="post" id="loginBtn_login" class="login_btns"
-                                aria-label="로그인 버튼">Sign in</button>
-                        </span>
+    <body>
+        <main class="login_area">
+            <div class="login_box">
+                <div class="login__box">
+                    <div class="login_inner">
+                        <h1>ChiroBones</h1>
+                        <form action="" method="">
+                            <div id="loginId" class="login_form">
+                                <input type="text" name="id" id="id" class="loginBtn_id" aria-label="이메일" autocapitalize="off" required />
+                                <label for="id">id@example.com</label>
+                            </div>
+                            <div id="loginPw" class="login_form">
+                                <input type="password" name="pw" id="pw" class="loginBtn_pw" aria-label="비밀번호" autocapitalize="off" required />
+                                <label for="pw">password</label>
+                            </div>
+                            <span class="loginBtn_area">
+                                <button type="submit" id="loginBtn_join" class="login_btns" aria-label="가입 버튼" onclick="location.href='join.html'">Sign up</button>
+                                <button type="submit" formmethod="post" id="loginBtn_login" class="login_btns" aria-label="로그인 버튼" onclick="location.href='index.html'">Sign in</button>
+                            </span>
+                        </form>
+                    </div>
                 </div>
-                </form>
             </div>
-        </div>
-        </div>
-    </main>
-</body>
-
+        </main>
+        <script src="app.js"></script>
+    </body>
 </html>

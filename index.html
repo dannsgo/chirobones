@@ -11,7 +11,7 @@
 
     <body>
         <!-- Header -->
-        <header id="boneHeader" class="header">
+        <header>
             <nav id="boneNavbar" class="navbar">
                 <ul id="boneNav" class="nav_info">
                     <li>
@@ -43,10 +43,21 @@
                 </ul>
             </nav>
         </header>
-        <!-- Sidebar -->
-        <sidebar id="sidebar" class="sidebar">
-            <div id="sideLeft" class="sidebar_left">
+        <main>
+            <!-- Sidebar -->
+            <sidebar class="sidebar">
                 <ul id="leftIcon" class="sidebar_i">
+                    <li id="image_upload" class="menu_i">
+                        <label for="uploader" class="uploader">
+                            <input type="file" id="uploader" style="display: none" accept="image/*" />
+                            <i class="material-icons">add_photo_alternate</i>
+                        </label>
+                    </li>
+                    <li id="coordinate" class="menu_i">
+                        <button class="i_btn">
+                            <i class="material-icons">grid_4x4</i>
+                        </button>
+                    </li>
                     <li id="i_point" class="menu_i">
                         <button class="i_btn">
                             <i class="material-icons">adjust</i>
@@ -73,9 +84,16 @@
                         </button>
                     </li>
                 </ul>
-            </div>
-            <div id="sideRight" class="sidebar_right">
-                <div id="sideAiBtn" class="side_btn">
+            </sidebar>
+
+            <!-- Canvas -->
+            <section class="canvas_area">
+                <canvas id="boneCanvas" class="boneCanvas"></canvas>
+                <div id="mouseXY"></div>
+            </section>
+
+            <aside class="aside">
+                <div id="asideAiBtn" class="aside_btn">
                     <button id="btnAI" class="btn_ai" type="button">ChiroBones</button>
                 </div>
                 <div id="tabMenu" class="tab_menu">
@@ -94,14 +112,9 @@
                         </li>
                     </ul>
                 </div>
-                <!-- <div> <ul> </ul> </div> -->
-            </div>
-        </sidebar>
-        <!-- Canvas -->
-        <main class="canvas">
-            <!-- <canvas id="boneCanvas" class="boneCanvas"></canvas> <div
-            class="canvasControls"></div> -->
+            </aside>
         </main>
+
         <script src="app.js"></script>
     </body>
 </html>

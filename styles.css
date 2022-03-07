@@ -1,15 +1,15 @@
-@import 'reset.css';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @font-face {
     font-weight: normal;
-    font-family: 'SpoqaHanSansNeo-Regular';
+    font-family: "SpoqaHanSansNeo-Regular";
     font-style: normal;
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
 }
 
 * {
-    box-sizing: border;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -17,12 +17,13 @@
 body {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     width: 100vw;
     height: 100vh;
     margin: 0;
     overflow: hidden;
     font-size: 14px;
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     background-color: rgb(17 15 15);
 }
 
@@ -77,7 +78,7 @@ body {
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    font-family: 'SpoqaHanSansNeo-Regular', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "SpoqaHanSansNeo-Regular", "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .login_form input {
@@ -133,7 +134,7 @@ body {
     color: #323232;
     font-weight: 700;
     font-size: 0.8rem;
-    font-family: 'SpoqaHanSansNeo-Regular', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "SpoqaHanSansNeo-Regular", "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     background-color: whitesmoke;
     border: none;
     border-radius: 5px;
@@ -180,7 +181,7 @@ body {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    font-family: 'SpoqaHanSansNeo-Regular', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "SpoqaHanSansNeo-Regular", "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .join_pannel {
@@ -215,7 +216,7 @@ body {
     padding: 0.3rem 0.5rem 0.3rem 0.5rem;
     color: #323232;
     font-size: 1rem;
-    font-family: 'SpoqaHanSansNeo-Regular', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "SpoqaHanSansNeo-Regular", "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     background-color: whitesmoke;
     border: none;
     border-radius: 6px;
@@ -229,7 +230,7 @@ body {
     color: whitesmoke;
     font-weight: 700;
     font-size: 0.8rem;
-    font-family: 'SpoqaHanSansNeo-Regular', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "SpoqaHanSansNeo-Regular", "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     background-color: #323232;
     border: 2px solid whitesmoke;
     border-radius: 5px;
@@ -246,8 +247,9 @@ body {
 
 /* start_index.html */
 /* start__header */
-.header {
+header {
     position: relative;
+    z-index: 3;
     background-color: #323232;
     box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.5);
 }
@@ -260,6 +262,7 @@ body {
 }
 
 .nav_info {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -276,10 +279,11 @@ body {
 }
 
 .nav_box {
+    z-index: 3;
     margin: 0 5px 0 5px;
     color: whitesmoke;
     font-size: 0.8rem;
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     background-color: rgb(87, 89, 89);
     border-color: rgb(109, 107, 107);
     border-style: solid;
@@ -305,18 +309,21 @@ body {
 
 /* navbar__end */
 /* header__end */
+
+/* start__main */
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
 /* start__sidebar */
 .sidebar {
     display: flex;
-    height: 100vh;
-    max-height: 100vh;
-    overflow: hidden;
-}
-
-.sidebar_left {
-    display: flex;
     justify-content: center;
     width: 3vw;
+    height: 100vh;
+    height: 100vh;
     max-height: 100vh;
     background-color: #323232;
 }
@@ -344,32 +351,59 @@ body {
     border: none;
     cursor: pointer;
 }
+/* sidebar__end */
 
-.sidebar_right {
+/* start__section */
+.boneCanvas {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+#mouseXY {
+    position: fixed; /* Sit on top of the screen */
+    bottom: 30px; /* 30px from the bottom */
+    left: 50%; /* Center the snackbar */
+    z-index: 1; /* Add a z-index if needed */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    padding: 16px; /* Padding */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    background-color: #333; /* Black background color */
+    border-radius: 2px; /* Rounded borders */
+    visibility: hidden; /* Hidden by default. Visible on click */
+}
+
+#mouseXY.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+/* section__end */
+
+/* start__aside */
+.aside {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     align-items: center;
+    justify-content: space-between;
     width: 25vw;
     height: 100%;
-    margin-left: auto;
     background-color: #323232;
 }
 
-#sideTabMenu {
-    list-style: none;
-}
-
-.side_btn {
+.aside_btn {
     margin: 0 auto;
     margin-top: 10%;
 }
 
 .btn_ai {
-    padding: 0.6vmax 5vmax 0.6vmax 5vmax;
+    padding: 0.6vmax 4vmax 0.6vmax 4vmax;
     color: #323232;
     font-weight: 700;
     font-size: 1.6rem;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     background-color: whitesmoke;
     border: none;
     border-radius: 5px;
@@ -382,22 +416,23 @@ body {
     border: 2px solid whitesmoke;
     transition: all 0.2s ease;
 }
-
 /* start__tabMenu */
 .tab_menu {
-    position: absolute;
+    position: relative;
     display: flex;
-    width: 25vw;
-    height: 100vh;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
     margin-top: 8%;
     text-decoration: none;
 }
 
 .tab_btn {
+    position: absolute;
     display: flex;
     width: 100%;
     padding: 0;
-    font-family: 'SpoqaHanSansNeo-Regular';
+    font-family: "SpoqaHanSansNeo-Regular";
     list-style: none;
 }
 
@@ -418,7 +453,7 @@ body {
     left: 0;
     display: none;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     color: whitesmoke;
     line-height: 100%;
     text-align: center;
@@ -433,14 +468,7 @@ body {
 .tab_menu .tab_btn li.tab_menus .tab_cont {
     display: block;
 }
-
 /* tabMenu__end */
-/* sidebar__end */
-/* start__canvasApi */
-.boneCanvas {
-    width: 100vw;
-    height: 100vh;
-}
+/* aside__end */
 
-/* canvasApi__end */
 /* index.html_end */
