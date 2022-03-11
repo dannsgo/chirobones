@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@font-face {
+    font-weight: normal;
+    font-family: "SpoqaHanSansNeo-Regular";
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: rgb(17 15 15);
+}
+
+/* start__header */
+header {
+    position: relative;
+    z-index: 3;
+    background-color: #323232;
+    box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.5);
+}
+
+/* start__navbar */
+.navbar {
+    display: flex;
+    align-content: space-between;
+    width: 100%;
+}
+
+.nav_info {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+    margin: 0;
+    margin-right: auto;
+    padding: 1.5vw 3vw 1.5vw 3vw;
+    padding-left: 4vw;
+    color: whitesmoke;
+    font-size: 0.8rem;
+    list-style: none;
+    border-radius: 6px;
+}
+
+.nav_box {
+    z-index: 3;
+    margin: 0 5px 0 5px;
+    color: whitesmoke;
+    font-size: 0.8rem;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: rgb(87, 89, 89);
+    border-color: rgb(109, 107, 107);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+#nav_gender {
+    height: 100%;
+}
+
+/* nav_info > border */
+.nav_vl {
+    display: flex;
+    margin: 0 6px 0 4px;
+    border-left: 1px solid #888;
+}
+
+/* input > date > icon */
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+/* navbar__end */
+/* header__end */
+
+/* start__main */
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+/* start__sidebar */
+.sidebar {
+    display: flex;
+    justify-content: center;
+    width: 3vw;
+    height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
+    background-color: #323232;
+}
+
+.sidebar_i {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    max-height: 100vh;
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.material-icons {
+    float: left;
+    margin: 0 auto;
+    padding: 10px 0 10px;
+    color: whitesmoke;
+    font-size: 1.5rem !important;
+}
+
+.i_btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* sidebar__end */
+
+/* start__section */
+.boneCanvas {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+#mouseXY {
+    position: fixed; /* Sit on top of the screen */
+    bottom: 30px; /* 30px from the bottom */
+    left: 50%; /* Center the snackbar */
+    z-index: 1; /* Add a z-index if needed */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    padding: 16px; /* Padding */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    background-color: #333; /* Black background color */
+    border-radius: 2px; /* Rounded borders */
+    visibility: hidden; /* Hidden by default. Visible on click */
+}
+
+#mouseXY.show {
+    visibility: visible; /* Show the snackbar */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+/* section__end */
+
+/* start__aside */
+.aside {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 25vw;
+    height: 100%;
+    background-color: #323232;
+}
+
+.aside_btn {
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.btn_ai {
+    padding: 0.6vmax 4vmax 0.6vmax 4vmax;
+    color: #323232;
+    font-weight: 700;
+    font-size: 1.6rem;
+    font-family: "Poppins";
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_ai:hover {
+    color: whitesmoke;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    transition: all 0.2s ease;
+}
+/* start__tabMenu */
+.tab_menu {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 8%;
+    text-decoration: none;
+}
+
+.tab_btn {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    font-family: "SpoqaHanSansNeo-Regular";
+    list-style: none;
+}
+
+.tab_btn li {
+    float: left;
+    margin: 0 auto;
+}
+
+.tab_menu .tab_btn .tab_btns {
+    display: felx;
+    color: whitesmoke;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.tab_menu .tab_btn .tab_cont {
+    position: absolute;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    color: whitesmoke;
+    line-height: 100%;
+    text-align: center;
+    background: black;
+}
+
+.tab_menu .tab_btn li.tab_menus .tab_btns {
+    color: #888;
+    font-weight: bold;
+}
+
+.tab_menu .tab_btn li.tab_menus .tab_cont {
+    display: block;
+}
