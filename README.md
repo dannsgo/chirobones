@@ -4,7 +4,7 @@ SMHRD 프로젝트
 
 1. tooltip 라이브러리 설치
 
-    - npm install @mui/material @emotion/react @emotion/styled
+    - `npm install @mui/material @emotion/react @emotion/styled`
 
 
 2. point 기능
