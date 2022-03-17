@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+    font-weight: normal;
+    font-family: "SpoqaHanSansNeo-Regular";
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: rgb(17 15 15);
+}
+
+/* start_join.html */
+.join_area {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #323232;
+}
+
+.join_container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 460px;
+    height: 80vh;
+    margin: 0 auto;
+}
+
+.join_area h1 {
+    margin: 0 0 3vh 0;
+    color: whitesmoke;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.join_area form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: "SpoqaHanSansNeo-Regular", "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.join_pannel {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.join_form {
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.join_title {
+    margin: 19px 0 8px;
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+.join_form input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 3rem;
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    color: #323232;
+    font-size: 1rem;
+    font-family: "SpoqaHanSansNeo-Regular", "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+.joinBtn_area button {
+    z-index: 1;
+    margin: 30px 0 9px;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 0.8rem;
+    font-family: "SpoqaHanSansNeo-Regular", "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #323232;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.joinBtn_area button:hover {
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    color: #323232;
+    background-color: whitesmoke;
+}
+/* join.html_end */

@@ -1,0 +1,45 @@
+.tabContainer {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    /* height: 20%; */
+}
+
+.tabBtn {
+    display: flex;
+    width: 100%;
+    color: rgba(245, 245, 245, 0.5);
+    font-family: "SpoqaHanSansNeo-Regular";
+    text-align: center;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.tabBtn span {
+    width: 100%;
+    padding: 3px 0px 3px 0px;
+}
+
+.active {
+    font-weight: 700;
+    border: 2px solid #999;
+    border-bottom: none;
+    outline: none;
+}
+
+.primary {
+    color: whitesmoke;
+    background: transparent;
+    border-bottom: 2px solid #999;
+    outline: none;
+}
+
+.tabKid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* overflow: auto; */
+}

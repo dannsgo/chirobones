@@ -1,17 +1,16 @@
-import React, { useState, useEffect } from "react";
-import "./index.css";
+import React from "react";
+// import React, { useState, useEffect } from "react";
 import Header from "./Header";
 import Main from "./Main";
-import Aside from "./Aside";
+import "./index.css";
 
-function IndexPage() {
+function MainPage() {
     return (
-        <div>
+        <div className="bodyStyle">
             <Header />
             <Main />
-            <Aside />
         </div>
     );
 }
 
-export default IndexPage;
+export default MainPage;
