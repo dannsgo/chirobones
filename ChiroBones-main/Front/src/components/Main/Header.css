@@ -1,0 +1,59 @@
+header {
+    position: relative;
+    z-index: 3;
+    background-color: #323232;
+    box-shadow: 0 10px 10px 0 rgb(0, 0, 0, 0.5);
+}
+
+/* start__navbar */
+.navbar {
+    display: flex;
+    align-content: space-between;
+    width: 100%;
+}
+
+.nav_info {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+    margin: 0;
+    margin-right: auto;
+    padding: 1.5vw 3vw 1.5vw 3vw;
+    padding-left: 4vw;
+    color: whitesmoke;
+    font-size: 0.8rem;
+    list-style: none;
+    border-radius: 6px;
+}
+
+.nav_box {
+    z-index: 3;
+    margin: 0 5px 0 5px;
+    color: whitesmoke;
+    font-size: 0.8rem;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: rgb(87, 89, 89);
+    border-color: rgb(109, 107, 107);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+#nav_gender {
+    height: 100%;
+}
+
+/* nav_info > border */
+.nav_vl {
+    display: flex;
+    margin: 0 6px 0 4px;
+    border-left: 1px solid #888;
+}
+
+/* input > date > icon */
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}

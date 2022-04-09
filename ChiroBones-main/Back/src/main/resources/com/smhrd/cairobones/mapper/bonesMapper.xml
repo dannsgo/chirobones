@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smhrd.cairobones.mapper.bonesMapper">
+    <!--회원가입-->
+    <insert id="bonesJoin" parameterType="com.smhrd.cairobones.VO.tbl_doctorVO">
+        INSERT INTO tbl_doctor(doctor_id, doctor_pw, doctor_name, doctor_license, license_date)
+        VALUES(#{doctor_id}, #{doctor_pw}, #{doctor_name}, #{doctor_license}, #{license_date})
+    </insert>
+
+    <!--로그인-->
+    <select id="bonesLogin"  resultType="com.smhrd.cairobones.VO.tbl_doctorVO">
+        SELECT * FROM tbl_doctor WHERE doctor_id=#{doctor_id} AND doctor_pw=#{doctor_pw}
+    </select>
+
+    <!--환자 엑스레이 업로드-->
+    <insert id="fileUpload" parameterType="com.smhrd.cairobones.VO.tbl_patientVO">
+        INSERT INTO tbl_patient(doctor_id, p_code, p_name, p_birthdate, p_xray, p_xraypath)
+        VALUES(#{doctor_id},#{p_code},#{p_name},#{p_birthdate},#{p_xray}, #{p_xraypath})
+    </insert>
+
+    <!--엑스레이 리스트-->
+    <select id="patientList" resultType="com.smhrd.cairobones.VO.tbl_patientVO">
+        SELECT * FROM tbl_patient
+    </select>
+    
+    <!--detail-->
+    <select id="detail" parameterType="int" resultType="com.smhrd.cairobones.VO.tbl_patientVO">
+        SELECT * FROM tbl_patient WHERE p_seq=#{p_seq}
+    </select>
+
+    <!--게시글 리스트-->
+    <select id="getBulletin" resultType="com.smhrd.cairobones.VO.tbl_bulletinVO">
+        SELECT * FROM tbl_bulletin ORDER BY article_seq
+    </select>
+
+    <!--게시글 상세-->
+    <select id="bulletinDetail" parameterType="int" resultType="com.smhrd.cairobones.VO.tbl_bulletinVO">
+        SELECT * FROM tbl_bulletin WHERE article_seq=#{article_seq}
+    </select>
+
+    <!--게시글 작성-->
+    <insert id="bulletinWrite" parameterType="com.smhrd.cairobones.VO.tbl_bulletinVO">
+        INSERT INTO tbl_bulletin(article_title, article_content, article_file, doctor_id)
+        VALUES(#{article_title}, #{article_content}, #{article_file}, #{doctor_id})
+    </insert>
+
+    <!--게시글 수정-->
+    <update id="bulletinUpdate" parameterType="com.smhrd.cairobones.VO.tbl_bulletinVO">
+        UPDATE tbl_bulletin SET
+        article_title=#{article_title},
+        article_content=#{article_content}
+        WHERE article_seq=#{article_seq}
+    </update>
+
+    <!--게시글 삭제-->
+    <delete id="bulletinDelete" parameterType="int">
+        DELETE FROM tbl_bulletin WHERE article_seq=#{article_seq}
+    </delete>
+
+    <!--댓글입력-->
+    <insert id="commentWrite" parameterType="com.smhrd.cairobones.VO.tbl_commentVO">
+        INSERT INTO tbl_comment(comment_content, article_seq, doctor_id)
+        VALUES(#{comment_content}, #{article_seq}, #{doctor_id})
+    </insert>
+
+    <!--댓글 출력-->
+    <select id="getCommentList" resultType="com.smhrd.cairobones.VO.tbl_commentVO">
+        SELECT * FROM tbl_comment WHERE article_seq=#{article_seq}
+    </select>
+
+    <!--댓글 수정-->
+    <update id="commentUpdate" parameterType="com.smhrd.cairobones.VO.tbl_commentVO">
+        UPDATE tbl_comment SET
+        comment_content=#{comment_content}
+        WHERE comment_seq=#{comment_seq}
+    </update>
+
+    <!--댓글 삭제-->
+    <delete id="commentDelete" parameterType="int">
+        DELETE FROM tbl_comment WHERE comment_seq=#{comment_seq}
+    </delete>
+
+    <!--x-ray landmark 출력 (tbl_bones_point)-->
+    <select id="getLandmark" resultType="com.smhrd.cairobones.VO.tbl_bones_pointVO">
+        SELECT * FROM tbl_bones_point WHERE p_seq=#{p_seq}
+    </select>
+
+    <!--landmark 값 수정-->
+    <update id="landmarkChange" parameterType="com.smhrd.cairobones.VO.tbl_bones_pointVO">
+        UPDATE tbl_bones_point SET
+                                   x1=#{x1}, y1=#{y1}, x2=#{x2}, y2=#{y2}, x3=#{x3}, y3=#{y3}, x4=#{x4}, y4=#{y4},
+                                   x5=#{x5}, y5=#{y5}, x6=#{x6}, y6=#{y6}, x7=#{x7}, y7=#{y7}, x8=#{x8}, y8=#{y8},
+                                   x9=#{x9}, y9=#{y9}, x10=#{x10}, y10=#{y10}, x11=#{x11}, y11=#{y11}, x12=#{x12}, y12=#{y12},
+                                   x13=#{x13}, y13=#{y13}, x14=#{x14}, y14=#{y14}, x15=#{x15}, y15=#{y15}, x16=#{x16}, y16=#{y16}
+        WHERE p_seq=#{p_seq}
+    </update>
+
+    <!--포인트 계산 값 출력(tbl_point_value)-->
+    <select id="landmarkValue" resultType="com.smhrd.cairobones.VO.tbl_point_valueVO">
+        SELECT * FROM tbl_point_value.v LEFT JOIN tbl_bones_point.p ON v.point_seq = p.point_seq
+    </select>
+
+    <!--포인트 계산 값 수정-->
+    <update id="valueChange" parameterType="com.smhrd.cairobones.VO.tbl_point_valueVO">
+        UPDATE tbl_point_value SET
+                                   v1=#{v1}, v2=#{v2}, v3=#{v3}, v4=#{v4}, v5=#{v5}, v6=#{v6}, v7=#{v7}, v8=#{v8}, v9=#{v9}, v10=#{v10}
+        WHERE value_seq=#{value_seq}
+    </update>
+
+    <!--환자 진단/처방 입력-->
+    <insert id="patientPre" parameterType="com.smhrd.cairobones.VO.tbl_patientVO">
+        INSERT INTO tbl_patient(p_diagnosis, p_prescription)
+        VALUES(#{p_diagnosis}, #{p_prescription})
+    </insert>
+</mapper>

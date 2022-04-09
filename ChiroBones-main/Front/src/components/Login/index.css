@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+    font-weight: normal;
+    font-family: "SpoqaHanSansNeo-Regular";
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: rgb(17 15 15);
+}
+
+/* start_login.html*/
+.login_area {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.login_box {
+    position: relative;
+    min-width: 500px;
+    max-width: 5rem;
+    min-height: 350px;
+    max-height: 5rem;
+    background-color: #323232;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.login__box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login_inner {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+}
+
+.login_inner h1 {
+    margin-bottom: 1.2rem;
+    color: whitesmoke;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+/* start__login input */
+.login_form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "SpoqaHanSansNeo-Regular", "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.login_form input {
+    box-sizing: border-box;
+    width: 366px;
+    height: 44px;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    color: whitesmoke;
+    font-size: 1rem;
+    background-color: #575959;
+    border: 1px solid #323232;
+    outline: none;
+}
+
+.loginBtn_id {
+    border-radius: 6px 6px 0 0;
+}
+
+.loginBtn_pw {
+    border-radius: 0 0 6px 6px;
+}
+
+.login_form label {
+    position: absolute;
+    left: 5.5rem;
+    color: #999;
+    font-size: 1rem;
+    transition: all 1s ease;
+}
+
+.login_form input:focus {
+    z-index: 1;
+    background-color: transparent;
+    border: 1px solid #575959;
+}
+
+.login_form input:focus + label,
+.login_form input:valid + label {
+    color: transparent;
+}
+
+/* login input__end */
+/* start__login button */
+.loginBtn_area {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.login_btns {
+    margin: 0 0.5rem 0 0.5rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    color: #323232;
+    font-weight: 700;
+    font-size: 0.8rem;
+    font-family: "SpoqaHanSansNeo-Regular", "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* login button__end */
+/* login.html_end */

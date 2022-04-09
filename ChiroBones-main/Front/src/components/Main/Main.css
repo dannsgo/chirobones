@@ -1,0 +1,15 @@
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.canvas_area {
+    display: flex;
+    /* position: relative; */
+    /* align-items: flex-start; */
+}
+
+.boneCanvas {
+    width: calc(100vw - 25vw - 3vw);
+    filter: brightness(var(--inputRange));
+}
