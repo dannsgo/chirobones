@@ -1,5 +1,5 @@
 import React from "react";
-import "./FirstTab_01input.css"
+import "./FirstTab_01input.css";
 
 function firstTab_01input() {
     return (
